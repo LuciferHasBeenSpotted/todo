@@ -3,14 +3,14 @@ import { useState } from 'react';
 import Note from './util/Note';
 import AddNote from './util/AddNote';
 
-export default function Notes() {
+export default function Notes(props) {
     const [ action, setAction ] = useState('');
     const [ inputActive, setInputActive ] = useState(false);
     const [ notes, setNotes ] = useState([]);
     return (
         <div
             style={{
-                width: '49.5%',
+                width: props.notesWidth,
                 overflowY: 'scroll',
                 textAlign: 'center'
             }}

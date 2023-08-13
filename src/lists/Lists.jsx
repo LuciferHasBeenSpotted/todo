@@ -3,7 +3,7 @@ import { useState } from 'react';
 import AddList from './utils/AddList';
 import List from './utils/List';
 
-export default function Lists() {
+export default function Lists(props) {
     const [ lists, setLists ] = useState([]);//title: str, content: [str], id: int
     const [ inputActive, setInputActive ] = useState(false);
     const [ action, setAction ] = useState('');
@@ -11,7 +11,7 @@ export default function Lists() {
     return (
         <div
             style = {{
-                width: '49.5%',
+                width: props.listsWidth,
                 overflowY: 'scroll',
                 textAlign: 'center'
             }}

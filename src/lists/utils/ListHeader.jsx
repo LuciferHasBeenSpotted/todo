@@ -55,7 +55,7 @@ export default function ListHeader(props) { //title: str, setAddItem: bool, setL
                         : <h3 style = {{ color: 'white', fontSize: 15 }} >{props.title}</h3>
                 }
 
-                <div style = {{ color: 'white' }} >{props.action}</div>
+                <div style = {{flex: 1, color: 'white', fontSize: 12 }} >{props.action}</div>
             </div>
             <div
                 style = {{

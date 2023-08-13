@@ -34,7 +34,7 @@ export default function TrashIcon(props) { //setAction: sf, setLists: sf, listID
         >
             <svg 
                 viewBox="0 0 448 512"
-                width={10}
+                width={15}
                 fill = {selected ? 'white' : 'black'}
 
             >

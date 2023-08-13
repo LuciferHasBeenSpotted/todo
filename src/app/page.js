@@ -1,12 +1,16 @@
 "use client";
 
-import React from 'react';
+import { useState } from 'react';
 
 import Notes from '@/notes/Notes';
 import Separator from '@/separator/Separator';
-import Checkboxs from '@/lists/Lists';
+import Lists from '@/lists/Lists';
 
 export default function Home() {
+
+    const [ notesWidth, setNotesWidth ] = useState('49.5%');
+    const [ listsWidth, setListsWidth ] = useState('49.5%');
+
     return (
         <main
             style = {{
@@ -17,9 +21,9 @@ export default function Home() {
                 justifyContent: 'flex-start'
             }}
         >
-            <Notes />
-            <Separator />
-            <Checkboxs />
+            <Notes notesWidth = {notesWidth} />
+            <Separator setNotesWidth = {setNotesWidth} setListsWidth = {setListsWidth} />
+            <Lists listsWidth = {listsWidth} />
             
         </main>
     );

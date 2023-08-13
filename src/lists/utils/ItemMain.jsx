@@ -1,5 +1,3 @@
-import { useState } from 'react';
-
 import TrashIcon from './itemsvgs/TrashIcon';
 import ArrowUpIcon from './itemsvgs/ArrowUpIcon';
 import ArrowDownIcon from './itemsvgs/ArrowDownIcon';
